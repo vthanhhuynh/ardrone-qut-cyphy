@@ -1,0 +1,9 @@
+digraph G {
+"/world" -> "/ptam"[label="Broadcaster: /ardrone_pose_estimation\nAverage rate: 20.204 Hz\nMost recent transform: 1208131.889 sec old \nBuffer length: 4.900 sec\n"];
+"/ptam_fixed" -> "/base_link"[label="Broadcaster: /ptam\nAverage rate: 8.554 Hz\nMost recent transform: 0.024 sec old \nBuffer length: 4.910 sec\n"];
+"/world" -> "/ptam_fixed"[label="Broadcaster: /ptam\nAverage rate: 8.552 Hz\nMost recent transform: 0.021 sec old \nBuffer length: 4.911 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1352450069.658"[ shape=plaintext ] ;
+ }->"/world";
+}
